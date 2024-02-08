@@ -1,6 +1,10 @@
 import React from 'react'
 import GooglePlay from './../../Icons/GooglePlay';
 import AppStore from './../../Icons/AppStore';
+import Socials from './../../Icons/Socials';
+import Uzcard from './../../Icons/Uzcard';
+import Humo from './../../Icons/Humo';
+import Payme from './../../Icons/Payme';
 
 export const Footer = () => {
   return (
@@ -30,8 +34,23 @@ export const Footer = () => {
           </div>
         </div>
         <div className='bg-[#10182C]'>
-          <div className='w-[90%] mx-auto'>
-            
+          <div className='w-[90%] mx-auto flex justify-between'>
+            <div className='flex flex-col'>
+              <h1 className='font-[300] text-sm text-white'>Ижтимоий тармоқлар</h1>
+              <Socials/>
+            </div>
+            <div className='flex flex-col'>
+              <h1 className='font-[300] text-sm text-white'>Боғланиш</h1>
+              <span className='text-white'>+998 90 253 77 53 support@liber.uz</span>
+            </div>
+            <div className='flex flex-col'>
+              <h1 className='font-[300] text-sm text-white'>Биз қабул қиламиз</h1>
+              <div className='flex'>
+              <Uzcard/>
+              <Humo/>
+              <Payme/>
+              </div>
+            </div>
           </div>
         </div>
     </div>
