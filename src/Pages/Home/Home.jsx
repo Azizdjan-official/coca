@@ -14,7 +14,7 @@ const Home = () => {
        <Info/>
       <Ruknlar/>
       <YangiAdded/>
-
+      
     </div>
   )
 }
