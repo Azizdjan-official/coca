@@ -3,6 +3,7 @@ import HeaderLogoIcon from './../../Icons/HeaderLogoIcon';
 import Ruknlar from './../../Icons/Ruknlar';
 import Search from './../../Icons/Search';
 import Uzb from './../../Icons/Uzb';
+import BasicModal from './HeaderButton';
 
 const Header = () => {
   return (
@@ -31,7 +32,8 @@ const Header = () => {
             <option>Greedo</option>
           </select>
           </div>
-          <button className='bg-[#3F51B5] w-[151px] text-white font-[700] text-lg rounded-[14px]' >Kirish</button>
+          {/* <button className='bg-[#3F51B5] w-[151px] text-white font-[700] text-lg rounded-[14px]' >Kirish</button> */}
+          <BasicModal/>
         </div>
     </div>
   )

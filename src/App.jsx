@@ -6,6 +6,8 @@ import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 import DetailBlog from './Pages/DetailBlog/DetailBlog';
 import Pricing from './Pages/Pricing/Pricing';
+import { ToastContainer } from "react-toastify";
+import Profile from "./Pages/profile/Profile";
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer position="top-right" theme="colored"/>
       <Routes>
         <Route path="/" element={<MainLayout/>}>
           <Route path="/" element={<Home/>} />
@@ -21,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/detailBlog" element={<DetailBlog/>} />
           <Route path="/pricing" element={<Pricing/>} />
+          <Route path="/profile" element={<Profile/>} />
         </Route>
       </Routes>
     </>
